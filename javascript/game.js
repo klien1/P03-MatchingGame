@@ -14,8 +14,22 @@ window.onload = function(){
 		//access back
 		document.getElementById("cards").children[index].children[1].classList.add("pokeball");
 	}//end for i
+
+
+	countdown();
 	memorize();
 };
+
+function countdown() {
+	let seconds = 20;
+	let time = setInterval(()=>{
+		seconds--;
+		document.getElementById('time').innerHTML = seconds.toString();
+		if (seconds <= 0){
+			clearInterval(time);
+		}
+	}, 1000);
+}
 
 function memorize(){
 	$("#cards").addClass("memorizing");

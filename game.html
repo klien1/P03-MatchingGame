@@ -22,7 +22,7 @@
 	<!--<script type="text/javascript" src="javascript/jq.js"></script>-->
 	<script type="text/javascript" src="javascript/game.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/game.css">
 
 </head>
 <body>
@@ -31,7 +31,7 @@
 	</div>
 	<h6>&nbsp;</h6>
 	<div class="container">
-		<div id="cards" class="col-md-10">
+		<div id="cards" class="col-md-9">
 			<div id="card0" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
 				<div class="front"></div>
 				<div class="back"></div>
@@ -145,13 +145,13 @@
 				<div class="back"></div>
 			</div>
 		</div>
-		<div id="strikes" class="col-md-2">
-			<!--<h1 class="text">Time Left</h1>-->
-
-			<h1 class="text">Lives</h1>
+		<div id="strikes" class="col-md-3">
+			<h2 class="text">Time Left</h2>
+			<h3 id="time" class="indent">&nbsp;</h3>
+			<h2 class="text">Lives</h2>
 			<ol id="life">
-				<li id="hp0" class="glyphicon glyphicon-heart"></li>
-				<li id="hp1" class="glyphicon glyphicon-heart"></li>
+				<li id="hp0" class="glyphicon glyphicon-heart"></li><br>
+				<li id="hp1" class="glyphicon glyphicon-heart"></li><br>
 				<li id="hp2" class="glyphicon glyphicon-heart"></li>
 			</ol>
 			<!--<h1 class="text">Score</h1>-->
