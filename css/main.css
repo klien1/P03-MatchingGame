@@ -1,0 +1,23 @@
+/*Kevin Lien*/
+.indent {
+    padding-left: 1em;
+}
+
+#rules {
+    font-family: 'Lora', serif;
+    font-size: large;
+    background-color: lightsteelblue;
+}
+
+.text {
+    font-family: 'Bungee', cursive;
+}
+
+.header {
+    background-color: black;
+    color:white;
+}
+
+body {
+    background-color: lightblue;
+}

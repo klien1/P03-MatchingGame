@@ -1,8 +1,4 @@
 /*Kevin Lien*/
-.text {
-    font-family: 'Bungee', cursive;
-}
-
 .charmander {
     background: url("../image/charmander.png") no-repeat;
     background-size: 85%;
@@ -99,10 +95,6 @@
 
 .border {
     border: dashed 2px red;
-}
-
-body {
-    background-color: lightblue;
 }
 
 #strikes {

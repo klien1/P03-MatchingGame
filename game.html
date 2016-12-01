@@ -6,6 +6,7 @@
 	<title>Pokemon Match</title>
 
 	<!--google font-->
+	<!--bungee-->
 	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
 
 	<!--twitter bootstrap-->
@@ -18,13 +19,14 @@
 	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 
 	<!--my files-->
-	<script type="text/javascript" src="javascript/jq.js"></script>
-	<script type="text/javascript" src="javascript/final.js"></script>
+	<!--<script type="text/javascript" src="javascript/jq.js"></script>-->
+	<script type="text/javascript" src="javascript/game.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
-	<div class="container-fluid" style="background-color: black; color:white">
+	<div class="container-fluid header">
 		<h1 class="text">Pokemon Matching Game</h1>
 	</div>
 	<h6>&nbsp;</h6>
@@ -144,7 +146,7 @@
 			</div>
 		</div>
 		<div id="strikes" class="col-md-2">
-			<h1 class="text">Time Left</h1>
+			<!--<h1 class="text">Time Left</h1>-->
 
 			<h1 class="text">Lives</h1>
 			<ol id="life">
@@ -152,16 +154,9 @@
 				<li id="hp1" class="glyphicon glyphicon-heart"></li>
 				<li id="hp2" class="glyphicon glyphicon-heart"></li>
 			</ol>
-
-			<h1 class="text">Score</h1>
+			<!--<h1 class="text">Score</h1>-->
 			<p></p>
 		</div>
-	</div>
-	<div class="container">
-		<p class="text">
-			Match as many as you can!
-		</p>
-		<!--<button id="reset" class="glyphicon glyphicon-refresh btn btn-primary"> Reset</button>-->
 	</div>
 </body>
 </html>
