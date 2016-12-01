@@ -87,7 +87,7 @@
 }
 
 .pokeball {
-    background: url("../image/Pokeball.png") no-repeat;
+    background: url("../image/pokeball.png") no-repeat;
     background-size: 100%;
     background-position-x: 50%;
     background-position-y: 50%;
