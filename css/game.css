@@ -109,8 +109,8 @@
 
 /* Courtesy of jQuery Flip from https://nnattawat.github.io/flip/ */
 .card-grid {
-    width: 126px;
-    height: 126px;
+    width: 110px;
+    height: 110px;
     margin: 1px;
     display: inline-block;
 }
