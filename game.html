@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--Kevin Lien-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pokemon Match</title>
+
+	<!--google font-->
+	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+	<!--twitter bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!--jquery-->
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<script src="javascript/jquery.js"></script>
+	<script src="javascript/jquery-ui.min.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+	<!--my files-->
+	<script type="text/javascript" src="javascript/jq.js"></script>
+	<script type="text/javascript" src="javascript/final.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<div class="container-fluid" style="background-color: black; color:white">
+		<h1 class="text">Pokemon Matching Game</h1>
+	</div>
+	<h6>&nbsp;</h6>
+	<div class="container">
+		<div id="cards" class="col-md-10">
+			<div id="card0" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card1" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card2" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card3" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card4" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card5" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card6" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card7" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card8" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card9" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card10" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card11" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card12" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card13" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card14" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card15" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card16" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card17" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card18" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card19" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card20" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card21" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card22" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card24" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card25" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card26" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card27" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+			<div id="card28" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
+				<div class="front"></div>
+				<div class="back"></div>
+			</div>
+		</div>
+		<div id="strikes" class="col-md-2">
+			<h1 class="text">Time Left</h1>
+
+			<h1 class="text">Lives</h1>
+			<ol id="life">
+				<li id="hp0" class="glyphicon glyphicon-heart"></li>
+				<li id="hp1" class="glyphicon glyphicon-heart"></li>
+				<li id="hp2" class="glyphicon glyphicon-heart"></li>
+			</ol>
+
+			<h1 class="text">Score</h1>
+			<p></p>
+		</div>
+	</div>
+	<div class="container">
+		<p class="text">
+			Match as many as you can!
+		</p>
+		<!--<button id="reset" class="glyphicon glyphicon-refresh btn btn-primary"> Reset</button>-->
+	</div>
+</body>
+</html>
