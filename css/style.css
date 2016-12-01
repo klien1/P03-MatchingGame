@@ -99,6 +99,7 @@
 
 #strikes {
     background-color: lightpink;
+    border: solid 2px;
 }
 
 #life {

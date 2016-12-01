@@ -14,15 +14,26 @@ window.onload = function(){
 		//access back
 		document.getElementById("cards").children[index].children[1].classList.add("pokeball");
 	}//end for i
+	memorize();
+};
 
+function memorize(){
 	$("#cards").addClass("memorizing");
 	window.setTimeout(function(){
 		$(".card-grid").flip({
 			trigger: "manual"
 		}).flip(true);
 		$("#cards").removeClass("memorizing");
-	}, 10000);
-};
+	}, 20000);
+}//end memorize
+
+function stopMemorize(){
+	window.clearTimeout(memorize());
+	$(".card-grid").flip({
+		trigger: "manual"
+	}).flip(true);
+	$("#cards").removeClass("memorizing");
+}
 
 function randomize(array){
 	let index = Math.floor(Math.random()*array.length);
