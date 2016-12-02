@@ -107,6 +107,24 @@
     font-size: 60px;
 }
 
+#countdown {
+    background-color: lightgreen;
+    border: solid 2px;
+}
+
+#time{
+    margin-left: 10%;
+}
+
+#currentScore {
+    background-color: lavenderblush;
+    border: solid 2px;
+}
+
+#score{
+    margin-left: 25%;
+}
+
 /* Courtesy of jQuery Flip from https://nnattawat.github.io/flip/ */
 .card-grid {
     width: 110px;

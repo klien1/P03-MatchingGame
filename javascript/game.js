@@ -15,7 +15,6 @@ window.onload = function(){
 		document.getElementById("cards").children[index].children[1].classList.add("pokeball");
 	}//end for i
 
-
 	countdown();
 	memorize();
 };
@@ -24,16 +23,16 @@ function countdown() {
 	let seconds = 20;
 	let time = setInterval(()=>{
 		seconds--;
-		document.getElementById('time').innerHTML = seconds.toString();
+		document.getElementById("time").innerHTML = `Game starts in: ${seconds}` ;
 		if (seconds <= 0){
 			clearInterval(time);
-		}
+		}//end if 20 seconds are over
 	}, 1000);
-}
+}//end countdown function
 
 function memorize(){
 	$("#cards").addClass("memorizing");
-	window.setTimeout(function(){
+	setTimeout(function(){
 		$(".card-grid").flip({
 			trigger: "manual"
 		}).flip(true);
@@ -42,12 +41,12 @@ function memorize(){
 }//end memorize
 
 function stopMemorize(){
-	window.clearTimeout(memorize());
+	clearTimeout(memorize());
 	$(".card-grid").flip({
 		trigger: "manual"
 	}).flip(true);
 	$("#cards").removeClass("memorizing");
-}
+}//end stop memorize
 
 function randomize(array){
 	let index = Math.floor(Math.random()*array.length);
@@ -76,7 +75,7 @@ $(function(){
 				$(this).flip(false);
 				array.push("#" + this.id);
 			}//end if card is currently active
-			if (array.length > 1) {
+			if (array.length == 2) {
 				$("#cards").addClass("memorizing");
 				if ($(array[0] + ">:first-child").hasClass($(array[1] + ">:first-child").attr("class"))) {
 					$("#cards").removeClass("memorizing");

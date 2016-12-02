@@ -29,7 +29,16 @@
 	<div class="container-fluid header">
 		<h1 class="text">Pokemon Matching Game</h1>
 	</div>
-	<h6>&nbsp;</h6>
+	<br>
+	<div class="container">
+		<div id="countdown" class="col-md-4">
+			<h3 id="time" class="text">Game Starts in: 20</h3>
+		</div>
+		<div id="currentScore" class="col-md-3 col-md-offset-1">
+			<h3 id="score" class="text">Score: 0</h3>
+		</div>
+	</div>
+	<br>
 	<div class="container">
 		<div id="cards" class="col-md-9">
 			<div id="card0" class="card-grid" onmouseout="setMouseOut(this.id)" onmouseover="setMouseOver(this.id)">
@@ -145,17 +154,13 @@
 				<div class="back"></div>
 			</div>
 		</div>
-		<div id="strikes" class="col-md-3">
-			<h2 class="text">Time Left</h2>
-			<h3 id="time" class="indent">&nbsp;</h3>
-			<h2 class="text">Lives</h2>
+		<div id="strikes" class="col-md-2">
+			<h2 class="text" style="margin-left: 15%">Lives</h2>
 			<ol id="life">
 				<li id="hp0" class="glyphicon glyphicon-heart"></li><br>
 				<li id="hp1" class="glyphicon glyphicon-heart"></li><br>
 				<li id="hp2" class="glyphicon glyphicon-heart"></li>
 			</ol>
-			<!--<h1 class="text">Score</h1>-->
-			<p></p>
 		</div>
 	</div>
 	<div class="container">

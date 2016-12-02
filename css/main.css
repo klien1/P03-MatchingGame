@@ -10,6 +10,10 @@
     border: 2px solid;
 }
 
+.lora {
+    font-family: 'Lora', serif;
+}
+
 .text {
     font-family: 'Bungee', cursive;
 }
