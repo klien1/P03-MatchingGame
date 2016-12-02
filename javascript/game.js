@@ -25,6 +25,7 @@ function countdown() {
 		seconds--;
 		document.getElementById("time").innerHTML = `Game starts in: ${seconds}` ;
 		if (seconds <= 0){
+			document.getElementById("time").innerHTML = "Good Luck!";
 			clearInterval(time);
 		}//end if 20 seconds are over
 	}, 1000);
@@ -82,7 +83,7 @@ $(function(){
 					$(array[0]).off();
 					$(array[1]).off();
 					score++;
-					console.log(score);
+					$("#score").html(`Score: ${score}`);
 					if (score >= 14) {
 						setCookie("final-score", score);
 						window.location.href = "result.html";

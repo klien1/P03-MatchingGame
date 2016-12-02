@@ -24,23 +24,23 @@
 		<h1 class="text">Pokemon Matching Game</h1>
 	</div>
 	<div class="container">
-		<div class="col-md-10 text">
+		<div class="col-md-8 text">
 			<h2 class="text">How to Play</h2>
 			<ol id="rules">
-				<li>You have 10 seconds to memorize the position of 28 randomly placed cards.</li><br>
-				<!--<img src="image/bulbasaur-transparent.png" style="height: 150px; width: 150px">-->
-				<li>After 20 seconds, all the cards will be flipped over.</li><br>
-				<li>Your goal is to match as many cards as you can.</li><br>
-				<li>However, each time you guess wrong, you lose a life.</li><br>
+				<li>You have 20 seconds to memorize the position of 28 randomly placed cards.</li>
+				<li>After 20 seconds, all the cards will be flipped over.</li>
+				<li>Your goal is to match as many cards as you can.</li>
+				<li>Each time your guess is incorrect, you lose a life.</li>
 				<li>Don't guess randomly because you only have 3 lives.</li>
 			</ol>
 		</div>
-		<div class="col-md-2">
-			<h1 class="text">images</h1>
-			<br>
-			<button class="btn btn-default text" onclick="playGame()">Play Game</button>
-			<br><br>
+		<div class="col-md-4" style="padding-top: 10em">
+			<button id="startGame" class="btn btn-default text" onclick="playGame()">Play Game</button>
 		</div>
+	</div>
+	<div class="container">
+		<h2 class="text">Example Game Board</h2>
+		<img src="image/gameboard.png" style="width: 50%; height: 50%; border: solid 3px;">
 	</div>
 </body>
 </html>

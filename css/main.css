@@ -5,13 +5,13 @@
 
 #rules {
     font-family: 'Lora', serif;
-    font-size: x-large;
+    font-size: 24px;
     background-color: lightsteelblue;
     border: 2px solid;
 }
 
-.lora {
-    font-family: 'Lora', serif;
+#startGame {
+    font-size: 30px;
 }
 
 .text {
