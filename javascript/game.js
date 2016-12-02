@@ -41,14 +41,6 @@ function memorize(){
 	}, 20000);
 }//end memorize
 
-function stopMemorize(){
-	clearTimeout(memorize());
-	$(".card-grid").flip({
-		trigger: "manual"
-	}).flip(true);
-	$("#cards").removeClass("memorizing");
-}//end stop memorize
-
 function randomize(array){
 	let index = Math.floor(Math.random()*array.length);
 	return array.splice(index, 1).toString();
