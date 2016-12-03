@@ -2,6 +2,7 @@
 
 //initialize grid
 window.onload = function(){
+	setCookie("final-score", '0', 1);
 	let pokemonBG = ["charmander", "squirtle", "bulbasaur", "pikachu", "mew", "eevee", "dratini", "cubone",
 					"snorlax", "moltres", "zapdos", "articuno", "sandshrew", "ponyta"];
 
@@ -89,7 +90,7 @@ $(function(){
 						$("#cards").removeClass("memorizing");
 						lives++;
 						if (lives >= 3) {
-							setCookie("final-score", score);
+							setCookie("final-score", score.toString(), 1);
 							window.location.href = "result.html";
 						}//end if no more lives set cookie
 					}, 1000);
