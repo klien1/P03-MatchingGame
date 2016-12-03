@@ -79,7 +79,8 @@ $(function(){
 					$("#score").html(`Score: ${score}`);
 					if (score >= 14) {
 						setCookie("final-score", score);
-						window.location.href = "result.html";
+						//don't want user to go back to game board with browser history
+						window.location.replace("result.html");
 					}//end if game is over set cookie
 				}//end if pokemon class match
 				else {
@@ -91,7 +92,8 @@ $(function(){
 						lives++;
 						if (lives >= 3) {
 							setCookie("final-score", score.toString(), 1);
-							window.location.href = "result.html";
+							//don't want user to go back to game board with browser history
+							window.location.replace("result.html");
 						}//end if no more lives set cookie
 					}, 1000);
 				}//end else
