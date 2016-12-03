@@ -14,8 +14,16 @@
 	<!--twitter bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+	<!--jquery-->
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<script src="javascript/jquery.js"></script>
+	<script src="javascript/jquery-ui.min.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
 	<!--my files-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/result.css">
+	<link rel="stylesheet" type="text/css" href="css/pokemon.css">
 	<script type="text/javascript" src="javascript/result.js"></script>
 
 </head>
@@ -23,8 +31,110 @@
 	<div class="container-fluid header">
 		<h1 class="text">Pokemon Matching Game</h1>
 	</div>
-	<div class="container">
-		<h1 id="finalScore" class="text"></h1>
+
+	<div class="container" style="padding-top: 5em">
+		<div id="finalResults" class="text col-md-5">
+			<h1>Results</h1>
+			<h2 id="matchesFound" class="indent">Number of Matches: </h2>
+			<h2 id="finalScore" class="indent"></h2>
+			<button class="btn btn-success">Play Again</button>
+		</div>
+		<div id="image-source" class="col-md-7">
+			<h1 class="text">Image Sources</h1>
+			<h3>Hover over image to get its source.</h3>
+			<div>
+				<div class="source-card">
+					<div class="front charmander"></div>
+					<div class="back charmander">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front squirtle"></div>
+					<div class="back squirtle">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front bulbasaur"></div>
+					<div class="back bulbasaur">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front pikachu"></div>
+					<div class="back pikachu">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front mew"></div>
+					<div class="back mew">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front eevee"></div>
+					<div class="back eevee">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front dratini"></div>
+					<div class="back dratini">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front cubone"></div>
+					<div class="back cubone">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front articuno"></div>
+					<div class="back articuno">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front zapdos"></div>
+					<div class="back zapdos">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front moltres"></div>
+					<div class="back moltres">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front sandshrew"></div>
+					<div class="back sandshrew">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front ponyta"></div>
+					<div class="back ponyta">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front snorlax"></div>
+					<div class="back snorlax">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+				<div class="source-card">
+					<div class="front pokeball"></div>
+					<div class="back pokeball">
+						<a href="index.html">Image Source</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

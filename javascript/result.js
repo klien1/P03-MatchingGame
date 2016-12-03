@@ -3,8 +3,10 @@ window.onload = function () {
 	let score = getCookie("final-score");
 	let finalScoreId = document.getElementById("finalScore");
 
+	document.getElementById("matchesFound").innerHTML = `Number of Matches: ${score}`;
+
 	if (score == 0){
-		finalScoreId.innerHTML = `You found no pairs!`;
+		finalScoreId.innerHTML = `You found no pairs`;
 	}//end if no matches
 	else if(score == 1){
 		finalScoreId.innerHTML = `You found ${score} pair`;
@@ -16,6 +18,14 @@ window.onload = function () {
 		finalScoreId.innerHTML = `You found ${score} pairs!`;
 	}//end if any other score
 };
+
+$(function () {
+	$(".source-card").flip({
+		trigger: "hover"
+	})
+});
+
+
 
 //code from w3schools at http://www.w3schools.com/js/js_cookies.asp
 function getCookie(cname) {

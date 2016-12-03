@@ -1,0 +1,26 @@
+.source-card {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+}
+
+.source-card .front, .source-card .back {
+    background-color: white;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.source-card .back a {
+    font-family: 'Bungee', cursive;
+}
+
+#image-source {
+    border: solid 2px;
+    background-color: lightsteelblue;
+    float: left;
+}
+
+#finalResults {
+    float: left;
+    width: 41%;
+}
