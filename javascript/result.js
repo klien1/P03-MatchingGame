@@ -17,15 +17,24 @@ window.onload = function () {
 	else{
 		finalScoreId.innerHTML = `You found ${score} pairs!`;
 	}//end if any other score
+
+	document.getElementById("goToRules").addEventListener("click", ()=>{
+		goToUrl("index.html");
+	});
+	document.getElementById("playAgain").addEventListener("click", ()=>{
+		goToUrl("game.html");
+	});
 };
+
+function goToUrl(url) {
+	location.href = url;
+}//end goToUrl
 
 $(function () {
 	$(".source-card").flip({
 		trigger: "hover"
-	})
+	});
 });
-
-
 
 //code from w3schools at http://www.w3schools.com/js/js_cookies.asp
 function getCookie(cname) {
