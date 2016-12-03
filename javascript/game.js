@@ -15,6 +15,8 @@ window.onload = function(){
 		cards.children[index].children[0].classList.add(randomize(pokemon));
 		//access back
 		cards.children[index].children[1].classList.add("pokeball");
+
+		cards.children[index].classList.add("facedown");
 	}//end for i
 	countdown(20);
 	memorize();
@@ -23,7 +25,7 @@ window.onload = function(){
 function countdown(seconds) {
 	let time = setInterval(()=>{
 		seconds--;
-		document.getElementById("time").innerHTML = `Game starts in: ${seconds}` ;
+		document.getElementById("time").innerHTML = `Game starts in: ${seconds}`;
 		if (seconds <= 0){
 			document.getElementById("time").innerHTML = "Good Luck!";
 			clearInterval(time);
@@ -77,8 +79,8 @@ $(function(){
 				$("#cards").addClass("memorizing");
 				if ($(array[0] + ">:first-child").hasClass($(array[1] + ">:first-child").attr("class"))) {
 					$("#cards").removeClass("memorizing");
-					$(array[0]).off();
-					$(array[1]).off();
+					$(array[0]).off().removeClass("facedown").css("border", "green 3px solid");
+					$(array[1]).off().removeClass("facedown").css("border", "green 3px solid");
 					score++;
 					$("#score").html(`Score: ${score}`);
 					if (score >= 14) {
@@ -96,8 +98,20 @@ $(function(){
 						lives++;
 						if (lives >= 3) {
 							setCookie("final-score", score.toString(), 1);
-							//don't want user to go back to game board with browser history
-							location.replace("result.html");
+							$(".card-grid").flip({
+								trigger: "manual"
+							}).flip(false);
+							$(".facedown").css("border", "red 3px solid");
+							let seconds = 10;
+							let interval = setInterval(()=>{
+								document.getElementById("time").innerHTML = `Going to results in ${seconds}`;
+								seconds--;
+								if (seconds <= 0){
+									//don't want user to go back to game board with browser history
+									location.replace("result.html");
+									clearInterval(interval);
+								}//end if seconds less than or equal to 0
+							}, 1000);
 						}//end if no more lives set cookie
 					}, 1000);
 				}//end else
