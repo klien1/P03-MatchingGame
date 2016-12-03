@@ -4,8 +4,10 @@ window.onload = function () {
 	let score = getCookie("final-score");
 	let finalScoreId = document.getElementById("finalScore");
 
+	//sets score when page loads
 	document.getElementById("matchesFound").innerHTML = `Number of Matches: ${score}`;
 
+	//prints message depending on the score
 	if (score == 0){
 		finalScoreId.innerHTML = `You found no pairs`;
 	}//end if no matches
@@ -19,9 +21,11 @@ window.onload = function () {
 		finalScoreId.innerHTML = `You found ${score} pairs!`;
 	}//end if any other score
 
+	//adds link to button Go To Rules that goes to index
 	document.getElementById("goToRules").addEventListener("click", ()=>{
 		goToUrl("index.html");
 	});
+	//adds link to button Play Again that goes to game board
 	document.getElementById("playAgain").addEventListener("click", ()=>{
 		goToUrl("game.html");
 	});
