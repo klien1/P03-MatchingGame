@@ -1,5 +1,5 @@
 // Kevin Lien
-
+"use strict";
 //initialize grid
 window.onload = function(){
 	setCookie("final-score", '0', 1);
@@ -7,21 +7,22 @@ window.onload = function(){
 					"snorlax", "moltres", "zapdos", "articuno", "sandshrew", "ponyta"];
 
 	let pokemon = pokemonBG.slice().concat(pokemonBG);
-	let size = document.getElementById("cards").children.length;
+	let cards = document.getElementById("cards");
+	let size = cards.children.length;
 
 	for (let index = 0; index < size; index++){
 		//access front
-		document.getElementById("cards").children[index].children[0].classList.add(randomize(pokemon));
+		cards.children[index].children[0].classList.add(randomize(pokemon));
 		//access back
-		document.getElementById("cards").children[index].children[1].classList.add("pokeball");
+		cards.children[index].children[1].classList.add("pokeball");
+
 	}//end for i
 
 	countdown();
 	memorize();
 };
-
-function countdown() {
-	let seconds = 20;
+//countdown timer
+function countdown(seconds) {
 	let time = setInterval(()=>{
 		seconds--;
 		document.getElementById("time").innerHTML = `Game starts in: ${seconds}` ;
@@ -32,6 +33,7 @@ function countdown() {
 	}, 1000);
 }//end countdown function
 
+//Memory phase
 function memorize(){
 	$("#cards").addClass("memorizing");
 	setTimeout(function(){
@@ -42,19 +44,23 @@ function memorize(){
 	}, 20000);
 }//end memorize
 
+//chooses a random index of an array and removes the the array and returns as a string
 function randomize(array){
 	let index = Math.floor(Math.random()*array.length);
 	return array.splice(index, 1).toString();
 }//end function randomize
 
+//adds border when mouse is over
 function setMouseOver(currentId){
 	document.getElementById(currentId).classList.add("border");
 }//end function setMouseOver
 
+//removes border when mouse is off
 function setMouseOut(currentId){
 	document.getElementById(currentId).classList.remove("border");
 }//end function setMouseOut
 
+//jquery flip on click
 $(function(){
 
 	let array = [];
@@ -80,7 +86,7 @@ $(function(){
 					if (score >= 14) {
 						setCookie("final-score", score);
 						//don't want user to go back to game board with browser history
-						window.location.replace("result.html");
+						location.replace("result.html");
 					}//end if game is over set cookie
 				}//end if pokemon class match
 				else {
@@ -93,7 +99,7 @@ $(function(){
 						if (lives >= 3) {
 							setCookie("final-score", score.toString(), 1);
 							//don't want user to go back to game board with browser history
-							window.location.replace("result.html");
+							location.replace("result.html");
 						}//end if no more lives set cookie
 					}, 1000);
 				}//end else

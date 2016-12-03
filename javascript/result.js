@@ -1,4 +1,5 @@
 // Kevin Lien
+"use strict";
 window.onload = function () {
 	let score = getCookie("final-score");
 	let finalScoreId = document.getElementById("finalScore");
@@ -26,10 +27,12 @@ window.onload = function () {
 	});
 };
 
+//function that moves to given url
 function goToUrl(url) {
 	location.href = url;
 }//end goToUrl
 
+//jquery flip hover
 $(function () {
 	$(".source-card").flip({
 		trigger: "hover"
