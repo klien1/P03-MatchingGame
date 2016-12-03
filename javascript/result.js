@@ -5,6 +5,9 @@ window.onload = function () {
 	let finalScoreId = document.getElementById("finalScore");
 
 	//sets score when page loads
+	if (score.length == 0){
+		score = 0;
+	}
 	document.getElementById("matchesFound").innerHTML = `Number of Matches: ${score}`;
 
 	//prints message depending on the score

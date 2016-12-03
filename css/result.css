@@ -8,7 +8,6 @@
 .source-card .front, .source-card .back {
     background-color: white;
     border: 3px solid black;
-    text-align: center;
 }
 
 .source-card .back a {
@@ -19,9 +18,30 @@
     border: solid 2px;
     background-color: lightsteelblue;
     float: left;
+    margin-left: 1em;
+}
+
+#resultsLeftSide {
+    float: left;
+    width: 40%;
 }
 
 #finalResults {
-    float: left;
-    width: 41%;
+    border: 2px solid black;
+    background-color: lightgreen;
+}
+
+#goToRules, #playAgain {
+    border: 4px solid black;
+    color: black;
+    font-size: xx-large;
+    margin-left: 3em;
+}
+
+#playAgain {
+    margin-top: 2em;
+}
+
+#buttons {
+    margin-top: 4em;
 }
