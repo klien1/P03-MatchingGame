@@ -16,7 +16,7 @@ window.onload = function(){
 		//access back
 		cards.children[index].children[1].classList.add("pokeball");
 	}//end for i
-	countdown();
+	countdown(20);
 	memorize();
 };
 //countdown timer
