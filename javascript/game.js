@@ -5,7 +5,7 @@ window.onload = function(){
 	setCookie("final-score", '0', 1);
 	let pokemonBG = ["charmander", "squirtle", "bulbasaur", "pikachu", "mew", "eevee", "dratini", "cubone",
 					"snorlax", "moltres", "zapdos", "articuno", "sandshrew", "ponyta"];
-
+	//creates 2 copies of pokemonBG and stores in pokemon
 	let pokemon = pokemonBG.slice().concat(pokemonBG);
 	let cards = document.getElementById("cards");
 	let size = cards.children.length;
@@ -15,9 +15,7 @@ window.onload = function(){
 		cards.children[index].children[0].classList.add(randomize(pokemon));
 		//access back
 		cards.children[index].children[1].classList.add("pokeball");
-
 	}//end for i
-
 	countdown();
 	memorize();
 };
