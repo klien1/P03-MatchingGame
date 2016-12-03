@@ -1,6 +1,6 @@
 /*Kevin Lien*/
 .border {
-    border: dashed 2px red;
+    border: solid 3px red;
 }
 
 #strikes {
@@ -18,17 +18,13 @@
     border: solid 2px;
 }
 
-#time{
-    margin-left: 10%;
+#time, #score, #lifeHeader{
+    text-align: center;
 }
 
 #currentScore {
     background-color: lavenderblush;
     border: solid 2px;
-}
-
-#score{
-    margin-left: 25%;
 }
 
 /* Courtesy of jQuery Flip from https://nnattawat.github.io/flip/ */
