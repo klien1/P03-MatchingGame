@@ -19,6 +19,7 @@
     background-color: lightsteelblue;
     float: left;
     margin-left: 1em;
+    padding-bottom: 1em;
 }
 
 #resultsLeftSide {
@@ -29,6 +30,7 @@
 #finalResults {
     border: 2px solid black;
     background-color: lightgreen;
+    padding-left: 1em;
 }
 
 #goToRules, #playAgain {
